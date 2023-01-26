@@ -11,7 +11,7 @@ async function changeLanguage(lang) {
   const newURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?lang=' + lang;
   window.history.replaceState({}, '', newURL);
 
-  // Obtenir el fitxer json corresponent
+  
   const response = await fetch(`./lang/${lang}.json`);
   const data = await response.json();
 
@@ -22,7 +22,7 @@ async function changeLanguage(lang) {
   console.log(document.getElementById('t_first_name'));
   document.getElementById('t_first_name').innerHTML = 'testing';
   
-  document.getElementById('t_first_name').innerHTML =data.t_first_name ;
+  document.getElementById('t_first_name').innerHTML =data. 
 
 
 }

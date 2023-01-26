@@ -15,7 +15,7 @@ async function changeLanguage(lang) {
   const response = await fetch(`./lang/${lang}.json`);
   const data = await response.json();
 
-  // Canviar els texts (Aquesta és la part que heu de modificar)
+  
   document
   console.log("hola");
   console.log(document);
